@@ -1,0 +1,276 @@
+
+@font-face {
+    font-family: "KumbhSans";
+    src: url(../font/KumbhSans-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"KumbhSans" ;
+
+}
+
+
+ /* DEBUT BARRE DE NAVIGATION  */
+
+#navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: auto;
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: -2px 5px 5px 6px rgba(0,0,0,0.09);
+    padding: 1rem;
+}
+.bars{
+    display: flex;
+    align-items: center;
+
+
+} 
+.bars i{
+    font-size: 1.4rem;
+    position: relative;
+    top: 5px;
+    margin: .5rem;
+}
+.shop{
+    display: flex;
+}
+.shop i{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.menu{
+    list-style-type: none;    
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    transform: translate((-0%, -50%));
+    margin-top: 1.5rem;
+}
+.menu a{
+    text-decoration: none;
+    margin: 0.5rem;
+    color: gray;
+}
+/* FIN BARRE DE NAVIGATION */
+
+
+
+
+
+
+
+
+/* DEBUT MAIN */
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#catalogue{
+    display: flex;
+    flex-direction: column;
+}
+.topmain{
+    color: rgb(58, 58, 58);
+    padding: 1rem;
+}
+.sneakerdescr{
+    padding-left: 1.5rem;
+    justify-content: center;
+    text-align: left;
+}
+.sneakerdescr h2{
+    margin-top: .3rem;
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}
+.pricedescr span{
+    font-size: 1rem;
+}
+.pricedescr{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    justify-content: space-between;
+}
+.pricedescr h3{
+    text-decoration:line-through;
+    color: gray;
+}
+.pricedescr span{
+color: orangered;
+background-color: rgba(255, 166, 0, 0.541);
+width: fit-content;
+padding: .3rem;
+border-radius: 5px 5px 5px 5px;
+}
+
+.howmuch{
+    justify-content: space-around;
+    background-color: rgba(145, 145, 145, 0.11);
+    padding: 0.5rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.howmuch button{
+    color: orangered;
+    border: none;
+    font-size: 2rem;
+}
+.howmuch h2{
+    margin-top: .4rem;
+}
+
+.gobuy{
+    display: flex;
+    justify-content: center;
+    background-color: orangered;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: -2px 5px 26px 28px rgba(237,140,26,0.22);
+}
+.gobuy i{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* FIN MAIN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUT DE FIN DU SITE ( SECTION ORANGE AVEC RESEAUX ETC...) */
+
+
+#end{
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#end h2{
+    font-size: 1rem;
+}
+/* FIN DU SITE ( SECTION ORANGE AVEC RESEAUX ETC...) */
+
+
+
+
+
+
+
+
+
+
+
+/* PARTIE RESPONSIVE */
+
+/* VERSION DESKTOP */
+@media screen and (min-width:576px){
+    .bars i{
+        display: none;
+    }
+    #imgcodeislaw{
+        background-image: url(../img/skateboarder.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: orangered;
+        height: 50vh;
+
+    }
+    #imgcodeislaw h2{
+        display: flex;
+        position: absolute;
+        top: 42%;
+        left: 55%;
+        font-size: 5rem;
+    }
+    .presentation{
+        display: none;
+    }
+    .global{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        position: relative;
+    }
+    .sneakers img{
+        border-radius: 45px 45px 45px 45px;
+
+    }
+    .globalsneaker{
+        display: flex;
+    }
+    .middlesneaker{
+        display: flex;
+    }
+    .pricedescr{
+        position: absolute;
+        top: 30%;
+        left: 32%;
+    }
+    .gobuy{
+        top: 80%;
+        left: 40%;
+        position: absolute;
+        width: 50%;
+    }
+    .howmuch{
+        top: 60%;
+        left: 40%;
+        position: absolute;
+        width: 50%;
+    }
+    .rowreversemiddle :nth-child(2){
+    flex-direction: row-reverse;        
+    }
+}
+
+
+
+
+/* VERSION MOBILE */
+@media screen and (max-width:576px){
+    .menu{
+        display: none;
+    }
+    #imgcodeislaw{
+        display: none;
+    }
+    main{
+        margin: 0%;
+    }
+    .pricedescr{
+        display: flex;
+
+    }
+
+}
